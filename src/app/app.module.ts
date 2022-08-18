@@ -5,10 +5,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './templates/header/header.component';
+import { ToolbarComponent } from './templates/toolbar/toolbar.component';
+import { FooterComponent } from './templates/footer/footer.component';
+import { DetailLessonComponent } from './views/detail-lesson/detail-lesson.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ToolbarComponent,
+    FooterComponent,
+    DetailLessonComponent
   ],
   imports: [
     BrowserModule,
