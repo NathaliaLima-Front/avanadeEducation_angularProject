@@ -1,1 +1,45 @@
-<p>toolbar works!</p>
+<mat-toolbar
+  class="mat-elevation-z4 gradient"
+>
+  <div class="container d-flex align-items-center py-1 px-0">
+    <h1 id="logo" class="pe-3 m-0">
+      avanade <span>Education</span>
+    </h1>
+    <span id="verticalRule" class="pe-2"></span>
+    <button
+      type="button"
+      id="buttonCategory"
+      class="btn btn-outline-light d-inline-flex align-items-center"
+    >
+      <i class="bi bi-grid-3x3-gap-fill pe-2"></i>
+      Categorias
+    </button>
+    <span class="m-auto position-relative" id="search">
+      <input
+        type="text"
+        name="input-search"
+        id="inputSearch"
+        placeholder="O que você quer aprender?"
+        class="form-control"
+      />
+      <i class="bi bi-search position-absolute"></i>
+    </span>
+
+    <div class="ms-auto">
+      <button
+        type="button"
+        id="buttonNotification"
+        class="btn btn-outline-light"
+      >
+        <i class="bi bi-bell-fill"></i>
+      </button>
+      <button
+        type="button"
+        id="buttonUser"
+        class="btn btn-outline-light"
+      >
+        <i class="bi bi-person-circle"></i>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
