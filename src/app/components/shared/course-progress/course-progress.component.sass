@@ -1,0 +1,21 @@
+#progressoCurso i::before
+    font-size: 20px
+.progress, .progress-bar
+    overflow: visible
+.progress.mt-2
+    --bs-progress-bg: var(--medium-gray)
+#progressoCurso
+    h4
+        font-size: 1rem
+        font-weight: 600
+    .progress-bar
+        background-color: var(--medium-red)
+        &::before
+            content: ""
+            width: 15px
+            height: 15px
+            background-color: #E63F51
+            border-radius: 50%
+            top: -50%
+            right: -1px
+            position: absolute

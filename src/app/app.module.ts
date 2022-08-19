@@ -15,6 +15,7 @@ import { HeaderComponent } from './templates/header/header.component';
 import { ToolbarComponent } from './templates/toolbar/toolbar.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { DetailLessonComponent } from './views/detail-lesson/detail-lesson.component';
+import { CourseProgressComponent } from './components/shared/course-progress/course-progress.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailLessonComponent } from './views/detail-lesson/detail-lesson.compo
     HeaderComponent,
     ToolbarComponent,
     FooterComponent,
-    DetailLessonComponent
+    DetailLessonComponent,
+    CourseProgressComponent
   ],
   imports: [
     BrowserModule,

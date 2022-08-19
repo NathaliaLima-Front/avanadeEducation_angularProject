@@ -1,0 +1,64 @@
+#voltarTodosCursos, h2
+    font-weight: 900
+    color: var(--dark-gray)
+    text-decoration: none
+#voltarTodosCursos i::before
+    font-size: 20px
+.squareIcon
+    position: absolute
+    z-index: 5
+    width: 50px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    i, span
+        color: var(--white)
+        font-size: 32px
+#accordionLessons
+    .accordion-item, .accordion-item h2
+        position: relative
+    .accordion-button
+        color: var(--white)
+        font-weight: 600
+        padding-left: 50px
+        position: relative
+        i
+            position: absolute
+            top: 0
+            right: 60px
+            width: 40px
+            height: 40px
+            font-size: 40px
+        &::after
+            content: "\f235"
+            display: inline-block
+            font-family: bootstrap-icons !important
+            font-style: normal
+            font-weight: normal !important
+            font-variant: normal
+            text-transform: none
+            line-height: 1
+            vertical-align: text-bottom
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+            width: 30px
+            font-size: 30px
+            line-height: 18px
+            background-image: none
+            transform: var(--bs-accordion-btn-icon-transform)
+        &:focus
+            border-color: none
+            box-shadow: none
+        &:not(.collapsed)::after
+            transform: none
+    .accordion-body
+        width: 90%
+        margin: 20px auto
+        .alert i
+            padding-right: 10px
+    video
+        margin-bottom: 20px
+.btn-red
+    background-color: var(--medium-red) !important
+    color: var(--white) !important
