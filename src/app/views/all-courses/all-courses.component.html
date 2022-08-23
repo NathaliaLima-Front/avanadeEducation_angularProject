@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <h2 class="mb-5">Escolha um curso para começar sua jornada!</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col d-flex justify-content-center cardCourse" *ngFor="let item of courses">
+          <a [routerLink]="item.linkUrl">
+              <div class="card text-bg-light mb-3 h-100" style="width: 18rem">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ item.titleCourse }}</h5>
+                      <p class="card-text">{{ item.descriptionCourse }}</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+    </div>
+  </div>
+  

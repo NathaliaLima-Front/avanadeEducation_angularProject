@@ -5,6 +5,7 @@
           id="voltarTodosCursos"
           class="btn btn-link p-0"
           style="--bs-btn-line-height: 20px"
+          [routerLink]="['/all-courses']"
         >
           <i class="bi bi-caret-left-fill pe-1"></i>
           Todos os cursos
@@ -16,7 +17,7 @@
     <div id="contentPage">
       <app-lesson-module></app-lesson-module>
       <div class="d-flex justify-content-end mt-5">
-          <button class="btn btn-red me-3">
+          <button class="btn btn-red me-3" [routerLink]="['/all-courses']">
               Voltar e escolher outro curso da trilha
           </button>
           <button class="btn btn-red">

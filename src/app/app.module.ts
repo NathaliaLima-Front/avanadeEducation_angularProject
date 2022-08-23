@@ -18,6 +18,8 @@ import { DetailLessonComponent } from './views/detail-lesson/detail-lesson.compo
 import { CourseProgressComponent } from './components/course-progress/course-progress.component';
 import { LessonModuleComponent } from './components/lesson-module/lesson-module.component';
 import { QuestionsLessonModuleComponent } from './components/questions-lesson-module/questions-lesson-module.component';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
+import { AllCoursesComponent } from './views/all-courses/all-courses.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { QuestionsLessonModuleComponent } from './components/questions-lesson-mo
     DetailLessonComponent,
     CourseProgressComponent,
     LessonModuleComponent,
-    QuestionsLessonModuleComponent
+    QuestionsLessonModuleComponent,
+    PageNotFoundComponent,
+    AllCoursesComponent
   ],
   imports: [
     BrowserModule,
