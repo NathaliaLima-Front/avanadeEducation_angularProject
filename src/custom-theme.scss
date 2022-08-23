@@ -33,7 +33,6 @@ $avanadeEducation_angularProject-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($avanadeEducation_angularProject-theme);
 
-@import url(./stylings/_variables.scss);
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 @font-face {

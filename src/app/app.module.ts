@@ -15,7 +15,9 @@ import { HeaderComponent } from './templates/header/header.component';
 import { ToolbarComponent } from './templates/toolbar/toolbar.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { DetailLessonComponent } from './views/detail-lesson/detail-lesson.component';
-import { CourseProgressComponent } from './components/shared/course-progress/course-progress.component';
+import { CourseProgressComponent } from './components/course-progress/course-progress.component';
+import { LessonModuleComponent } from './components/lesson-module/lesson-module.component';
+import { QuestionsLessonModuleComponent } from './components/questions-lesson-module/questions-lesson-module.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CourseProgressComponent } from './components/shared/course-progress/cou
     ToolbarComponent,
     FooterComponent,
     DetailLessonComponent,
-    CourseProgressComponent
+    CourseProgressComponent,
+    LessonModuleComponent,
+    QuestionsLessonModuleComponent
   ],
   imports: [
     BrowserModule,

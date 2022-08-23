@@ -1,0 +1,45 @@
+<div id="contentPage">
+    <div class="accordion" id="accordionLessons">
+      <div class="accordion-item" *ngFor="let item of lessons; index as i" >
+        <h2 class="accordion-header" [id]="'lesson' + i">
+          <div class="squareIcon" [innerHTML]="item.iconLesson"></div>
+          <button
+            class="accordion-button collapsed gradient"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapse' + i"
+            aria-expanded="false"
+            [attr.aria-controls]="'collapse' + i"
+            
+          >
+            {{ item.title }}
+            <i class="fa-solid fa-medal" *ngIf="item.statusComplete"></i>
+          </button>
+        </h2>
+        <div
+          [id]="'collapse' + i"
+          class="accordion-collapse collapse"
+          [attr.aria-labelledby]="'lesson' + i"
+          data-bs-parent="#accordionLessons"
+        >
+          <div class="accordion-body">
+            <iframe
+              class="w-100"
+              height="315"
+              [src]="item.videoUrl"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="aboutLesson">
+              {{ item.description }}
+            </div>
+            <app-questions-lesson-module></app-questions-lesson-module>
+            <button class="btn btn-red">Próxima aula</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
