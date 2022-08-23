@@ -4,7 +4,8 @@
         <h2 class="accordion-header" [id]="'lesson' + i">
           <div class="squareIcon" [innerHTML]="item.iconLesson"></div>
           <button
-            class="accordion-button collapsed gradient"
+            class="accordion-button gradient"
+            [ngClass]="{'collapsed':i !== 0}"
             type="button"
             data-bs-toggle="collapse"
             [attr.data-bs-target]="'#collapse' + i"
@@ -19,6 +20,7 @@
         <div
           [id]="'collapse' + i"
           class="accordion-collapse collapse"
+          [ngClass]="{'show':i == 0}"
           [attr.aria-labelledby]="'lesson' + i"
           data-bs-parent="#accordionLessons"
         >
